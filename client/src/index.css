@@ -1,0 +1,92 @@
+@import url('https://fonts.cdnfonts.com/css/nexa');
+@font-face {
+    font-family: 'Nexa';
+    src: url('nexa-regular.woff2') format('woff2'), url('nexa-regular.woff') format('woff');
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Nexa', sans-serif;
+    font-weight: heavy;
+}
+
+h3 {
+    font-family: 'Nexa', sans-serif;
+}
+
+.pokemon-grid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 15px;
+}
+
+.pokemon-card {
+    /*border: 1px solid black;*/
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.pokemon-card img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.pokemon-card h3 {
+    margin-top: 0;
+}
+
+input,
+select {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 6px;
+}
+
+.search-bar {
+    width: 300px;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 7px;
+    margin-right: 6px;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+.search-filter {
+    width: 300px;
+    height: 35px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 7px;
+    font-family: sans-serif;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23ccc' stroke-width='1' stroke-linecap='round' d='M2 5l6 6 6-6'/%3E%3C/svg%3E");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+}
+
+.search-filter option {
+    font-family: sans-serif;
+}
