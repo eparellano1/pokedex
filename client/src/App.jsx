@@ -7,7 +7,7 @@ const App = () => {
   const [filterType, setFilterType] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:3000/pokedex').then(response => {
+    axios.get('http://localhost:3000/').then(response => {
       setPokemon(response.data);
     });
   }, []);
